@@ -180,7 +180,7 @@ def opponent_guess():
         player_asked = player_asked + 1
         if player_asked > (num_opponents+1):
             player_asked = player_asked % (num_opponents+1)
-        response = input("Enter "+player_list[player_asked] + "'s Response: ")
+        response = input("Enter " + player_list[player_asked] + "'s Response: ")
         while (response != "No") and (response != "no") and (response != "Yes") and (response != "yes"):
             response = input("Incorrect Response. Enter either 'No', 'no', 'Yes', or 'yes': ")
         question_num = question_num + 1
